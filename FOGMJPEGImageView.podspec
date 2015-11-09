@@ -13,9 +13,8 @@ Pod::Spec.new do |s|
   s.author       = "Richard C. McGuire"
   s.source       = { :git => "https://github.com/vfog/FOGMJPEGImageView.git", :tag => "0.0.1" }
   s.requires_arc = true
-
   s.platform     = :ios, "7.0"
-
+  s.tvos.deployment_target = '9.0'
   s.source_files  = "FOGMJPEGImageView/**/*.{h,m}" #".{h,m}"
 
 end
