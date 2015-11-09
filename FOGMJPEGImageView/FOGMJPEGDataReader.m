@@ -66,6 +66,14 @@
     [self.dataTask resume];
 }
 
+- (void)startReadingFromURLRequest:(NSURLRequest *)request
+{
+    self.receivedData = [[NSMutableData alloc] init];
+
+    self.dataTask = [self.URLSession dataTaskWithRequest:request];
+    [self.dataTask resume];
+}
+
 - (void)stop
 {
     [self.dataTask cancel];

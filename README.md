@@ -5,7 +5,19 @@ FOGMJPEGImageView is a UIImageView subclass dedicated to displaying a MJPEG from
 
 A typical use case for FOGMJPEGImageView would be displaying a live webcam feed.
 
-Installation
+
+Installation with CocoaPods
+============
+
+[CocoaPods](https://cocoapods.org/) is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries like AFNetworking in your projects. See the ["Getting Started" guide for more information](https://github.com/AFNetworking/AFNetworking/wiki/Getting-Started-with-AFNetworking).
+
+#### Podfile
+
+```ruby
+pod "FOGMJPEGImageView", :git => 'https://github.com/wbroek/FOGMJPEGImageView.git'
+```
+
+Manual Installation
 ============
 
 Copy the contents of the FOGMJPEGImageView directory into your project:
@@ -21,7 +33,7 @@ Copy the contents of the FOGMJPEGImageView directory into your project:
 Usage
 =====
 
-With an instantiated FOGMJPEGImageView simply call `startWithURL:` passing the URL of the MJPEG feed you wish to display
+With an instantiated FOGMJPEGImageView simply call `startWithURL:` passing the URL of the MJPEG feed you wish to display or use `startWithNSURLRequest:` with the whole request to the MJPEG feed
 
 ```objective-c
 FOGMJPEGImageView *mjpegImageView;
@@ -62,7 +74,7 @@ And implement some or all of the given delegate methods from the protocol
 Maintainers
 =======
 
-FOGMJPEGImageView is mainted by [Richard C McGuire](https://github.com/vfog) ([@vf0g](https://twitter.com/vf0g))
+This FOGMJPEGImageView fork is mainted by [Wouter vab den Broek](https://github.com/wbroek) ([@wbroek](https://twitter.com/wbroek))
 
 License
 =======
